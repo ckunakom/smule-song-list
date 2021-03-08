@@ -39,7 +39,7 @@ I am sure many hard-core programmers already figured this out (and didn't share 
 Oh! Crediting my [buddy](https://github.com/Dorfnox) for helped looking for the workable url and for walking through my `while` syntax with me🙌
 
 ### Update 7-MAR-2021:
-- Previously, the hardcoding `offset += 25` will skip some of the records when making requests. This is fixed by having the `offset` takes the values from the data , `next_offset`.
+- Updated the hardcoding `offset += 25` to use the values from the data, `next_offset`.
 - Updated the request and the loop code to update the user with print statement and to handle different response codes.  
 
 ### Untracked History & Update for 16-SEP-2020:
