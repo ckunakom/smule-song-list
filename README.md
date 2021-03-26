@@ -3,7 +3,6 @@
 Get a list of songs (and more) you recorded together with your favorite Smulean~
 
 ![all_songs](Images/all_songs_table.PNG)
-<em><h5>Don't worry, you will get the date😂 I consider date a PII!</h5></em>
 
 ### PURPOSE
 
@@ -29,9 +28,7 @@ IF after you run the first loop and you get an error in the 2nd loop (the chance
   1. Wait about half an hour and run the 2nd loop and the rest of the code.
   1. If it still doesn't work, use the `alt.ipynb`: Make sure to not run all the code in one-go since we need that 30 min between each request. Once the 1st run and 2nd run are complete, you should have 2 csv files. Run the `alt_clean-up.ipynb` to clean-up, load & append two csv as one dataframe.
   
-  <em>Yeah, I haven't figured out any way around that request limitation or why it is such a pain in the 🦄🌈...</em> 
-  
-  I tried adding `time.sleep(2)` and to no avail. Smule doesn't spawn a way to do a proper API request either... because no one cares! 😫😭</em>
+ <em>I tried adding `time.sleep(2)` and to no avail. Smule doesn't spawn a way to do a proper API request either... because no one cares! 😫😭</em>
 
 ### FINAL NOTE
 I am sure many hard-core programmers already figured this out (and didn't share since I couldn't find one😔), but I created this as a 3-month-old programming toddler; hence, the OMG-excitement🤩
