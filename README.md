@@ -1,11 +1,11 @@
 # Smule: Songs List
 
 Get a list of songs (and more) you recorded together with your favorite Smulean~
+![all_songs](Images/all_songs_table.PNG)
 
 ### Update 4-MAY-2022:
 - Quick solution for dealing with 🫖 418 response code (scroll down to LIMITATIONS & WORK-AROUND section!)
-
-![all_songs](Images/all_songs_table.PNG)
+- Updated data extraction code to be more concise. Also added `print` statement here and there to keep track of what is going on in the loop. 
 
 ### PURPOSE
 
