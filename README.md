@@ -2,6 +2,9 @@
 
 Get a list of songs (and more) you recorded together with your favorite Smulean~
 
+### Update 4-MAY-2022:
+- Quick solution for dealing with 🫖 418 response code (scroll down to LIMITATIONS & WORK-AROUND section!)
+
 ![all_songs](Images/all_songs_table.PNG)
 
 ### PURPOSE
@@ -23,12 +26,15 @@ Everything you need is in the `Resources` folder👍
 
 - Get a beautiful dataframe which you can export to csv -Done!🎉
 
-### LIMITATIONS
+### LIMITATIONS & WORK-AROUND
 IF after you run the first loop and you get an error in the 2nd loop (the chance is really high unfortunately):
   1. Wait about half an hour and run the 2nd loop and the rest of the code.
   1. If it still doesn't work, use the `alt.ipynb`: Make sure to not run all the code in one-go since we need that 30 min between each request. Once the 1st run and 2nd run are complete, you should have 2 csv files. Run the `alt_clean-up.ipynb` to clean-up, load & append two csv as one dataframe.
   
  <em>I tried adding `time.sleep(2)` and to no avail. Smule doesn't spawn a way to do a proper API request either... because no one cares! 😫😭</em>
+
+#### WORK-AROUND (4-MAY-2022 Update)
+Use VPN to get a different IP address when requesting data after the first run! I use [ProtonVPN](https://protonvpn.com/) since it's free! I was able to do multiple runs on the code without waiting (especially nowadays the wait time has increased to 1-week to 1-month...)! It is a little cumbersome to having to disconnect and reconnect to get a different IP address each time, but it is better than waiting for 7-30 days just to get the data!
 
 ### FINAL NOTE
 I am sure many hard-core programmers already figured this out (and didn't share since I couldn't find one😔), but I created this as a 3-month-old programming toddler; hence, the OMG-excitement🤩
