@@ -5,7 +5,13 @@ Get a list of songs (and more) you recorded together with your favorite Smulean~
 
 ### Update 4-MAY-2022:
 - Quick solution for dealing with 🫖 418 response code (scroll down to LIMITATIONS & WORK-AROUND section!)
-- Updated data extraction code to be more concise. Also added `print` statement here and there to keep track of what is going on in the loop. 
+- Updated data extraction code to be more concise. Also added `print` statement here and there to keep track of what is going on in the loop.
+
+### Update 6-MAY-2022:
+- There's a chance that your loop might not finish when using VPN via ProtonVPN. So you will not be able to get all the song list for users with >5000 recording. Your PC's original IP address will be able to request all the way though (then you will have to wait 1 - 4 weeks..)! 
+There's a work around, just annoying:
+  - Additional print message was added to indicate the `next_offset`. If the request is not complete, `offset` will need to be change from `0` to whatever the last `next_offset` from the incomplete while-loop.
+- Updated repo to only have one main jupyter workbook. VPN solution answers to not having to use multiple jupyter notebooks.
 
 ### PURPOSE
 
@@ -22,14 +28,14 @@ Everything you need is in the `Resources` folder👍
 - Add the username in the `config.py file` (or if you want, you can add the username directly within the code too)
 
 - Run the code in the jupyter notebook
-  - Note all the library that you should have before you run the code.
+  - You will need the following libraries for this project: `json`, `pandas`, `request`.
 
 - Get a beautiful dataframe which you can export to csv -Done!🎉
 
 ### LIMITATIONS & WORK-AROUND
 IF after you run the first loop and you get an error in the 2nd loop (the chance is really high unfortunately):
-  1. Wait about half an hour and run the 2nd loop and the rest of the code.
-  1. If it still doesn't work, use the `alt.ipynb`: Make sure to not run all the code in one-go since we need that 30 min between each request. Once the 1st run and 2nd run are complete, you should have 2 csv files. Run the `alt_clean-up.ipynb` to clean-up, load & append two csv as one dataframe.
+  1. Wait about ...however long (30 mins to 1 month) and run the 2nd loop and the rest of the code.
+  1. See WORK-AROUND section below.
   
  <em>I tried adding `time.sleep(2)` and to no avail. Smule doesn't spawn a way to do a proper API request either... because no one cares! 😫😭</em>
 
@@ -37,7 +43,7 @@ IF after you run the first loop and you get an error in the 2nd loop (the chance
 Use VPN to get a different IP address when requesting data after the first run! I use [ProtonVPN](https://protonvpn.com/) since it's free! I was able to do multiple runs on the code without waiting (especially nowadays the wait time has increased to 1-week to 1-month...)! It is a little cumbersome to having to disconnect and reconnect to get a different IP address each time, but it is better than waiting for 7-30 days just to get the data!
 
 ### FINAL NOTE
-I am sure many hard-core programmers already figured this out (and didn't share since I couldn't find one😔), but I created this as a 3-month-old programming toddler; hence, the OMG-excitement🤩
+(Update) Still to this date (6-MAY-2022), there is still no desginated API or data request from Smule. If anyone finds out otherwise, please do let me know!
 
 Oh! Crediting my [buddy](https://github.com/Dorfnox) for helped looking for the workable url and for walking through my `while` syntax with me🙌
 
