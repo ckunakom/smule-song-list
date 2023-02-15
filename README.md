@@ -3,6 +3,9 @@
 Get a list of songs (and more) you recorded together with your favorite Smulean~
 ![all_songs](Images/all_songs_table.PNG)
 
+### Update 14-FEB-2023:
+⛔ As of 2023, Smule team seems to have truncated the data you can get from that URL string <i>(understandable)</i> and the information on the recordings are only limited to the channel's favorite page.
+
 ### Update 4-MAY-2022:
 - Quick solution for dealing with 🫖 418 response code (scroll down to LIMITATIONS & WORK-AROUND section!)
 - Updated data extraction code to be more concise. Also added `print` statement here and there to keep track of what is going on in the loop.
@@ -12,6 +15,10 @@ Get a list of songs (and more) you recorded together with your favorite Smulean~
 There's a work around, just annoying:
   - Additional print message was added to indicate the `next_offset`. If the request is not complete, `offset` will need to be change from `0` to whatever the last `next_offset` from the incomplete while-loop.
 - Updated repo to only have one main jupyter workbook. VPN solution answers to not having to use multiple jupyter notebooks.
+
+### Update 7-MAR-2021:
+- Updated the hardcoding `offset += 25` to use the values from the data, `next_offset`.
+- Updated the request and the loop code to update the user with print statement and to handle different response codes.  
 
 ### PURPOSE
 
@@ -46,10 +53,6 @@ Use VPN to get a different IP address when requesting data after the first run! 
 (Update) Still to this date (6-MAY-2022), there is still no desginated API or data request from Smule. If anyone finds out otherwise, please do let me know!
 
 Oh! Crediting my [buddy](https://github.com/Dorfnox) for helped looking for the workable url and for walking through my `while` syntax with me🙌
-
-### Update 7-MAR-2021:
-- Updated the hardcoding `offset += 25` to use the values from the data, `next_offset`.
-- Updated the request and the loop code to update the user with print statement and to handle different response codes.  
 
 ### Untracked History & Update for 16-SEP-2020:
 I had to trash my repo and re-created it. Previous revision history is not available, but please note the following: 
