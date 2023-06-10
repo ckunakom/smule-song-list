@@ -33,6 +33,8 @@ It is a little cumbersome to having to disconnect and reconnect to get a differe
 ### Context and Lament
 [Smule](https://www.smule.com/) is a social singing app you can use to sing either on your own or with others. I was obssessed with trying to get my user's data because I have favorite people that I sing with, so I created this program to do that.
 
-Unfortunately, Smule does not have any sort of API endpoints where you can get your data easily. After a bunch of googling, I came across a URL (mentioned above) where you can put <i>anyone's username</i> for the user's parameter and you will get a json data. <i> Nope! Not secure at all. </i> 
+Unfortunately, Smule does not have any sort of API endpoints where you can get your data easily. After a bunch of googling, I came across a URL (mentioned above) where you can put <i>anyone's username</i> for the user's parameter and you will get a json data. <i> Nope! Not secure at all. </i>  
 
 <i>Have I tried emailed Smule team about this?</i> Yes! They basically wish me luck using what I have and that was it.
+
+<i>Why do I care?</i> Because I have some [dashboards](https://ckunakom.github.io/smule-data-visual/) created using these data. Since I still have the data from 2021, I was able to produce something out of that full data. Though the dashboards will never be current as there is no updated data I can grab anymore.
