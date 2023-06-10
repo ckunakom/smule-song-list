@@ -14,7 +14,7 @@ The number of records (101 in this case) should match with # of recordings shown
 
 📌 You used to be able to get a list of full-on user's data. As of 2023, Smule team seems to have truncated the data you can get from the 'data source' url: https://www.smule.com/s/profile/performance/username 
 
-The information on the recordings are now only limited to the user's favorite playlist as opposed to all recordings a user has in their account ( including geological location... <i>Maybe that's why they updated it👀</i>)
+The information on the recordings are now only limited to the user's favorite playlist as opposed to all recordings a user has in their account ( including geo-location... <i>Maybe that's why they updated it👀</i>)
 
 ### Tools
 Everything you need is in the `Resources` folder, including instructions.
