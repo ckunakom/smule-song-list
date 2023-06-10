@@ -45,7 +45,7 @@ while True:
     
     for x in range(0,len(json_stuff)):
         mining_list.append(json_stuff[x])
-        print(f'Processing record index #{offset + x}: {offset}, #{x}')
+        print(f'Processing record number #{offset + x + 1}: Offset {offset}, Index {x}')
 
     offset = response_json['next_offset']
     
