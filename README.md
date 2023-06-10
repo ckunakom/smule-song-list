@@ -31,6 +31,8 @@ As a workaround, I use [ProtonVPN](https://protonvpn.com/) to use a different IP
 It is a little cumbersome to having to disconnect and reconnect to get a different IP address each time if you want to get multiple sets of data, but it is better than waiting for 7-30 days just to get the data... and unable to use your app 😒
 
 ### Context and Lament
+Read full history blog(ish) [here](https://ckunakom.github.io/my_smule_record/)
+
 [Smule](https://www.smule.com/) is a social singing app you can use to sing either on your own or with others. I was obssessed with trying to get my user's data because I have favorite people that I sing with, so I created this program to do that.
 
 Unfortunately, Smule does not have any sort of API endpoints where you can get your data easily. After a bunch of googling, I came across a URL (mentioned above) where you can put <i>anyone's username</i> for the user's parameter and you will get a json data. <i> Nope! Not secure at all. </i>  
